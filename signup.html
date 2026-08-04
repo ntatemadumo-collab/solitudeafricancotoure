@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>signup</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body>    
     <h1>Sign Up</h1>
     <p>If you don't have an account, please sign up.</p>
     <form action="index.html">
+      <label for="name-and-surname">Name and Surname:</label>
+      <input
+        type="text"
+        id="name-and-surname"
+        name="name-and-surname"
+        required
+      /><br /><br />
       <label for="new-email">Email Address:</label>
       <input
         type="email"
@@ -34,5 +41,9 @@
       <input type="submit" value="Sign Up" />
       <br><br>
     </form>
+    <a href="signup.html">
+      <button type="button">Sign Up</button>
+    </a>
+    <br><br>
   </body>
 </html>
