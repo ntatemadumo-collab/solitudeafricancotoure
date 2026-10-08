@@ -17,15 +17,91 @@
         <a href="contact.html">Contact</a>
         <a href="index.html">Logout</a>
     </nav>
-     <div>
+     <div class="box">
       <h3>Overview</h3>
       <p>Solitude African Cotoure is an Afro-luxurt brand. Each piece is unique with limited mass production. We revive royal African textiles and tailor them with haute couture techniques.</p>
+      </div>
       <br>
+      <div class="box">
       <h3>Mission</h3>
       <p>Our mission is to preserve African heritage through unique luxurious garments, crafted by African artisans for those who value exclusivity over trends.</p>
+      </div>
       <br>
+      <div class="box">
       <h3>Vision</h3>
       <p>Our vision is to compete with the likes of MaXhosa and become a leading African fashion house. From South Africa to the World.</p>
      </div>
+     <div class="box">
+    <b><p id="description">Please complete this survey to share your experience with us.</p></b>
+    <form id="survey-form">
+      <b><label id="name-label" for="name">Name and Surname</label></b>
+      <input
+       required
+       type="text"
+       id="name"
+       placeholder="e.g. John Doe"
+      /><br>
+
+      <b><label id="email-label" for="email">Email Address</label></b>
+      <input
+       type="email"
+       required
+       id="email"
+       placeholder="email@gmail.com"
+      /><br>
+      
+      <b><label id="number-label" for="number">Phone Number</label></b>
+      <input 
+       type="number"
+       id="number"
+       min="0"
+       max="15"
+       placeholder="+27123456789"
+      /><br><br>
+      
+      <b><label for="dropdown">Please select how easy our website is to navigate.</label></b>
+      <select id="dropdown">
+        <option selected value="Confusing">Confusing</option>
+        <option value="Moderate">Moderate</option>
+        <option value="Easy">Easy</option>
+        <option value="I-prefer-not-to-say">I prefer not to say</option>
+      </select><br><br>
+
+      <b><legend>How would you rate our product?</legend></b>
+      <label for="good">Good</label>
+      <input type="radio" value="Good" name="character" id="good">
+      <label for="okay">Okay</label>
+      <input type="radio" value="Okay" name="character" id="good">
+      <label for="bad">Bad</label>
+      <input type="radio" value="Bad" name="character" id="good">
+      <br><br>
+
+      <b><legend>Where did you hear about us?</legend></b>
+
+      
+      <select id="dropdown">
+        <option selected value="tiktok">TikTok</option>
+        <option value="ig">Instagram</option>
+        <option value="google">Google</option>
+        <option value="other">Other</option>
+      </select>
+      <br><br>
+
+     <b><legend>Your favourite pages:</legend></b>
+     <label for="gallery">Gallery</label>
+     <input type="checkbox" value="Nothing" name="character" id="good">
+     <label for="shop">Shop</label>
+     <input type="checkbox" value="Mentality" name="character" id="good">
+     <label for="about">About</label>
+     <input type="checkbox" value="Heart" name="character" id="good">
+     <br><br>
+
+     <b><legend>Additional Comments</legend></b>
+     <textarea id="comments" name="comments" rows="10" cols="30"></textarea>
+     <br><br>
+
+    <button id="submit" type="submit">Submit</submit>
+    </form>
+    </div>
   </body>
 </html>

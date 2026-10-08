@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="box">
     <h1>SOLITUDE</h1>
     <h2>AFRICAN COTOURE</h2>
+    </div>
+    <div class="box">
     <nav>
         <a href="home.html">Home</a>
         <a href="gallery.html">Gallery</a>
@@ -17,48 +20,121 @@
         <a href="contact.html">Contact</a>
         <a href="index.html">Logout</a>
     </nav>
+    </div>
     <div>
       <p>Welcome to Solitude. Where we crown your solitude and make you fit in by standing out.</p>
     </div>
-    <div>
+    <div class="box">
       <a href="gallery.html"><figure>
       <img
        src="images/Solitude.jpeg" alt="Solitude Logo" width="150" />
        <figcaption>Gallery</figcaption>
-       <p></p>
+       <p>Would you like to see some of our pieces? Click here to enter a world of beauty and uniqueness.</p>
     </figure></a>
     </div>
-    <div>
+    <div class="box">
       <a href="shop.html"><figure>
       <img
        src="images/Solitude.jpeg" alt="Solitude Logo" width="150" />
        <figcaption>Shop</figcaption>
-       <p></p>
+       <p>Are you interested in one of our pieces? Click here to acquire the pieces that have caught your eye.</p>
     </figure></a>
     </div>
-    <div>
+    <div class="box">
       <a href="about.html"><figure>
       <img
        src="images/Solitude.jpeg" alt="Solitude Logo" width="150" />
        <figcaption>About</figcaption>
-       <p></p>
+       <p>Do you want to know more about who we are? Click here to learn more about us and what we are all about.</p>
     </figure></a>
     </div>
-    <div>
+    <div class="box">
       <a href="contact.html"><figure>
       <img
        src="images/Solitude.jpeg" alt="Solitude Logo" width="150" />
        <figcaption>Contact</figcaption>
-       <p></p>
+       <p>Do have an enquiry about something? Click here for our contact information so you can get into touch with us.</p>
       </figure></a>
     </div>
-    <div>
+    <div class="box">
     <a href="index.html"><figure>
       <img
        src="images/city-exit-sign.jpg" alt="exit" width="150" />
        <figcaption>Logout</figcaption>
-       <p></p>
+       <p>Goodbye! We hope to see you back soon.</p>
     </figure></a>
+    </div>
+    <div class="box">
+    <b><p id="description">Please complete this survey to share your experience with us.</p></b>
+    <form id="survey-form">
+      <b><label id="name-label" for="name">Name and Surname</label></b>
+      <input
+       required
+       type="text"
+       id="name"
+       placeholder="e.g. John Doe"
+      /><br>
+
+      <b><label id="email-label" for="email">Email Address</label></b>
+      <input
+       type="email"
+       required
+       id="email"
+       placeholder="email@gmail.com"
+      /><br>
+      
+      <b><label id="number-label" for="number">Phone Number</label></b>
+      <input 
+       type="number"
+       id="number"
+       min="0"
+       max="15"
+       placeholder="+27123456789"
+      /><br><br>
+      
+      <b><label for="dropdown">Please select how easy our website is to navigate.</label></b>
+      <select id="dropdown">
+        <option selected value="Confusing">Confusing</option>
+        <option value="Moderate">Moderate</option>
+        <option value="Easy">Easy</option>
+        <option value="I-prefer-not-to-say">I prefer not to say</option>
+      </select><br><br>
+
+      <b><legend>How would you rate our product?</legend></b>
+      <label for="good">Good</label>
+      <input type="radio" value="Good" name="character" id="good">
+      <label for="okay">Okay</label>
+      <input type="radio" value="Okay" name="character" id="good">
+      <label for="bad">Bad</label>
+      <input type="radio" value="Bad" name="character" id="good">
+      <br><br>
+
+      <b><legend>Where did you hear about us?</legend></b>
+
+      
+      <select id="dropdown">
+        <option selected value="tiktok">TikTok</option>
+        <option value="ig">Instagram</option>
+        <option value="google">Google</option>
+        <option value="other">Other</option>
+      </select>
+      <br><br>
+
+     <b><legend>Your favourite pages:</legend></b>
+     <label for="gallery">Gallery</label>
+     <input type="checkbox" value="Nothing" name="character" id="good">
+     <label for="shop">Shop</label>
+     <input type="checkbox" value="Mentality" name="character" id="good">
+     <label for="about">About</label>
+     <input type="checkbox" value="Heart" name="character" id="good">
+     <br><br>
+
+     <b><legend>Additional Comments</legend></b>
+     <textarea id="comments" name="comments" rows="10" cols="30"></textarea>
+     <br><br>
+
+    <button id="submit" type="submit">Submit</submit>
+    </form>
     </div>
     </body>
 </html>
